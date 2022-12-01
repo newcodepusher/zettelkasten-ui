@@ -10,7 +10,7 @@ export interface DropDownMenuProps {
 
 export const DropDownMenu = (props: DropDownMenuProps) => {
   const { textArray, onClickArray, displayValue } = props
-  return (
+    return (
     <Menu isLazy placement="right">
       <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
         {displayValue}
@@ -18,6 +18,7 @@ export const DropDownMenu = (props: DropDownMenuProps) => {
       <Portal>
         {' '}
         <MenuList zIndex="popover">
+            // @ts-ignore
           {textArray.map((option, i) => {
             ;<MenuItem onClick={onClickArray[i]}> {option} </MenuItem>
           })}
