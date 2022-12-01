@@ -79,6 +79,9 @@
     "web-vitals": "^2.1.4",
     "word-wrap": "^1.2.3"
   },
+  "devDependencies": {
+    "@types/d3-interpolate": "^3.0.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
