@@ -103,7 +103,7 @@ export const ContextMenu = (props: ContextMenuProps) => {
             <>
               {target && (
                 <>
-                  <Heading size="xs" isTruncated px={3} py={1}>
+                  <Heading size="xs" px={3} py={1}>
                     {target.title}
                   </Heading>
                   <MenuDivider borderColor="gray.500" />
