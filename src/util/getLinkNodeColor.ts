@@ -1,5 +1,5 @@
 import { initialColoring, initialVisuals } from '../components/config'
-import { LinksByNodeId } from '../index'
+import { LinksByNodeId } from '../pages'
 import { getNodeColorById } from './getNodeColorById'
 
 export const getLinkNodeColor = ({
