@@ -28,6 +28,12 @@ import 'katex/dist/katex.css'
 import { ThemeContext } from '../../util/themecontext'
 import { LinksByNodeId, NodeByCite, NodeById } from '../../pages'
 
+import { defaultNoteStyle, viewerNoteStyle, outlineNoteStyle } from './noteStyle'
+import { Scrollbars } from 'react-custom-scrollbars-2'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { getThemeColor } from '../../util/getThemeColor'
+import {fetchNodeById} from "../../util/dataSource";
+
 export interface LinkProps {
   href: any
   children: any
@@ -62,12 +68,6 @@ export interface NormalLinkProps {
   href: string
   children: string
 }
-
-import { defaultNoteStyle, viewerNoteStyle, outlineNoteStyle } from './noteStyle'
-import { Scrollbars } from 'react-custom-scrollbars-2'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { getThemeColor } from '../../util/getThemeColor'
-import {fetchNodeById} from "../../util/dataSource";
 
 export const NodeLink = (props: NodeLinkProps) => {
   const {
