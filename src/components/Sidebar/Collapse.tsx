@@ -119,6 +119,7 @@ export const Collapse = React.forwardRef<HTMLDivElement, CollapseProps>((props, 
   const animate = isOpen || unmountOnExit ? 'enter' : 'exit'
 
   return (
+      // @ts-ignore
     <AnimatePresence initial={false} custom={custom}>
       {show && (
         <motion.div
