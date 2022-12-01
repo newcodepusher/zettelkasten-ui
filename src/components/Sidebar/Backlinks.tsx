@@ -4,7 +4,9 @@ import { GraphData, NodeObject, LinkObject } from 'force-graph'
 
 import { VStack, Box, Button, Heading, StackDivider } from '@chakra-ui/react'
 import React from 'react'
-import { ProcessedOrg } from '../../util/processOrg'
+import { PreviewLink } from './Link'
+import { OrgRoamNode } from '../../api'
+import { normalizeLinkEnds } from '../../util/normalizeLinkEnds'
 
 export interface BacklinksProps {
   previewNode: NodeObject | OrgRoamNode
@@ -20,10 +22,6 @@ export interface BacklinksProps {
   macros: { [key: string]: string }
 }
 
-import { PreviewLink } from './Link'
-import { OrgRoamNode } from '../../api'
-import { Section } from './Section'
-import { normalizeLinkEnds } from '../../util/normalizeLinkEnds'
 
 export const Backlinks = (props: BacklinksProps) => {
   const {
