@@ -34,12 +34,6 @@ export const OrgImage = (props: OrgImageProps) => {
         )
     }
 
-    const srcName = src.replaceAll(/file:/g, '')
-
-    const dir = path.dirname(file)
-    const fullPath =
-        path.isAbsolute(srcName) || srcName.slice(0, 1) === '~' ? srcName : path.join(dir, srcName)
-    const encodedPath = encodeURIComponent(encodeURIComponent(fullPath))
 
     return (
         <Container my={4} position="relative"/>
