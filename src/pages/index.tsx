@@ -94,26 +94,6 @@ export type Scope = {
   excludedNodeIds: string[]
 }
 
-export default function Home() {
-  // only render on the client
-  const [showPage, setShowPage] = useState(false)
-  useEffect(() => {
-    setShowPage(true)
-  }, [])
-
-  if (!showPage) {
-    return null
-  }
-  return (
-    <>
-      <Head>
-        <title>ORUI</title>
-      </Head>
-      <GraphPage />
-    </>
-  )
-}
-
 export function GraphPage() {
   const [threeDim, setThreeDim] = usePersistantState('3d', false)
   const [tagColors, setTagColors] = usePersistantState<TagColors>('tagCols', {})
@@ -1386,5 +1366,26 @@ export const Graph = function (props: GraphProps) {
         />
       )}
     </Box>
+  )
+}
+
+
+export default function Home() {
+  // only render on the client
+  const [showPage, setShowPage] = useState(false)
+  useEffect(() => {
+    setShowPage(true)
+  }, [])
+
+  if (!showPage) {
+    return null
+  }
+  return (
+      <>
+        <Head>
+          <title>ORUI</title>
+        </Head>
+        <GraphPage />
+      </>
   )
 }
