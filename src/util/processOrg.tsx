@@ -4,7 +4,6 @@ import uniorgParse from 'uniorg-parse'
 import uniorg2rehype from 'uniorg-rehype'
 import uniorgSlug from 'uniorg-slug'
 import extractKeywords from 'uniorg-extract-keywords'
-import attachments from 'uniorg-attach'
 // rehypeHighlight does not have any types
 // add error thing here
 // import highlight from 'rehype-highlight'
@@ -78,10 +77,6 @@ export const ProcessedOrg = (props: ProcessedOrgProps) => {
   const orgProcessor = unified()
     .use(uniorgParse)
     .use(extractKeywords)
-    .use(attachments, {
-      idDir: attachDir || undefined,
-      useInheritance,
-    })
     .use(uniorgSlug)
     .use(uniorg2rehype, { useSections: true })
 
