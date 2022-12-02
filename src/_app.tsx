@@ -1,14 +1,12 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import './styles/globals.css'
 import { ChakraProvider, extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
 import { useEffect, useState, useMemo, useContext, useReducer } from 'react'
 import * as d3int from 'd3-interpolate'
 
-import { ThemeContext } from '../util/themecontext'
-import { usePersistantState } from '../util/persistant-state'
-import { themes } from '../components/themes'
+import { ThemeContext } from './util/themecontext'
+import { themes } from './components/themes'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: any) {
   type Theme = [string, { [color: string]: string }]
   const initialTheme: Theme = ['one-vibrant', themes['one-vibrant']]
   const [isInitialized, setIsInitialized] = useState(false)

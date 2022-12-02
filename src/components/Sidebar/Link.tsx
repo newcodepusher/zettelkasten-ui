@@ -26,7 +26,7 @@ import { ProcessedOrg } from '../../util/processOrg'
 import 'katex/dist/katex.css'
 // import rehype2react from 'rehype-react'
 import { ThemeContext } from '../../util/themecontext'
-import { LinksByNodeId, NodeByCite, NodeById } from '../../pages'
+import { LinksByNodeId, NodeByCite, NodeById } from '../../index'
 
 import { defaultNoteStyle, viewerNoteStyle, outlineNoteStyle } from './noteStyle'
 import { Scrollbars } from 'react-custom-scrollbars-2'

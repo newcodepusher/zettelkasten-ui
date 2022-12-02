@@ -1,4 +1,4 @@
-import { LinksByNodeId } from '../pages'
+import { LinksByNodeId } from '../index'
 import { normalizeLinkEnds } from './normalizeLinkEnds'
 
 export const findNthNeighbors = ({

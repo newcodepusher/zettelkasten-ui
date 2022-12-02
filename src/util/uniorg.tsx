@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { LinksByNodeId, NodeByCite, NodeById } from '../pages/index'
+import { LinksByNodeId, NodeByCite, NodeById } from '../index'
 import { ProcessedOrg } from './processOrg'
 import {fetchNodeById} from "./dataSource";
 

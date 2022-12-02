@@ -25,7 +25,7 @@ import remarkSectionize from 'remark-sectionize'
 import remarkRehype from 'remark-rehype'
 
 import { PreviewLink } from '../components/Sidebar/Link'
-import { LinksByNodeId, NodeByCite, NodeById } from '../pages'
+import { LinksByNodeId, NodeByCite, NodeById } from '../index'
 import React, { createContext, ReactNode, useMemo } from 'react'
 import { OrgImage } from '../components/Sidebar/OrgImage'
 import { Section } from '../components/Sidebar/Section'

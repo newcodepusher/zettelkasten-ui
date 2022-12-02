@@ -1,4 +1,4 @@
-import { LinksByNodeId, NodeByCite, NodeById } from '../../pages/index'
+import { LinksByNodeId, NodeByCite, NodeById } from '../../index'
 
 import { GraphData, NodeObject, LinkObject } from 'force-graph'
 
