@@ -18,6 +18,7 @@ import { ThemeContext } from '../../../util/themecontext'
 export const ThemeSelect = () => {
   type Theme = { [key: string]: string }
   const { emacsTheme, setEmacsTheme, highlightColor } = useContext(ThemeContext)
+
   return (
     <Flex alignItems="center" justifyContent="space-between" pl={7} pr={2}>
       <Text>Theme</Text>
@@ -29,7 +30,10 @@ export const ThemeSelect = () => {
           color="black"
           rightIcon={<ChevronDownIcon />}
         >
+        <>
+          // @ts-ignore
           {emacsTheme[0]}
+          </>
         </MenuButton>
         <MenuList minW={10} zIndex="popover" bgColor="gray.200">
           <MenuItem
