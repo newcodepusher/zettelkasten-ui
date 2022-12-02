@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Image from 'next/image'
-import path from 'path'
 import {Container} from '@chakra-ui/react'
 
 //import '../../../public/placeholder.png'

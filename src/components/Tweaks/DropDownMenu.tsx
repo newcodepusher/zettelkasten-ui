@@ -18,7 +18,6 @@ export const DropDownMenu = (props: DropDownMenuProps) => {
       <Portal>
         {' '}
         <MenuList zIndex="popover">
-            // @ts-ignore
           {textArray.map((option, i) => {
             ;<MenuItem onClick={onClickArray[i]}> {option} </MenuItem>
           })}
